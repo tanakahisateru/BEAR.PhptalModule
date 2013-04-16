@@ -9,9 +9,8 @@ namespace BEAR\ExtPhptal\Provide\TemplateEngine\Phptal;
 
 use BEAR\Sunday\Extension\TemplateEngine\TemplateEngineAdapterInterface;
 use BEAR\Sunday\Exception\TemplateNotFound;
+use PHPTAL;
 use Ray\Di\Di\Inject;
-use Ray\Di\Di\Named;
-use Ray\Di\Di\PostConstruct;
 
 /**
  * PHPTAL adapter
