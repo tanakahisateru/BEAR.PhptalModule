@@ -112,7 +112,7 @@ class PhptalAdapter implements TemplateEngineAdapterInterface
         $this->template = $tplWithoutExtension . self::EXT;
         $this->fileExists($this->template);
         $this->phptal->setTemplate($this->template);
-        foreach($this->values as $k=>$v) {
+        foreach ($this->values as $k => $v) {
             $this->phptal->set($k, $v);
         }
         $rendered = $this->phptal->execute();
