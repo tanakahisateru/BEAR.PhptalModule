@@ -32,7 +32,7 @@ class PhptalAdapter implements TemplateEngineAdapterInterface
     /**
      * PHPTAL
      *
-     * @var \PHPTAL
+     * @var PHPTAL
      */
     private $phptal;
 
@@ -51,11 +51,11 @@ class PhptalAdapter implements TemplateEngineAdapterInterface
     /**
      * Constructor
      *
-     * @param \PHPTAL $phptal
+     * @param PHPTAL $phptal
      *
      * @Inject
      */
-    public function __construct(\PHPTAL $phptal)
+    public function __construct(PHPTAL $phptal)
     {
         $this->phptal = $phptal;
     }
