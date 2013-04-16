@@ -1,0 +1,29 @@
+{
+    "name": "bear/extphptal",
+    "description": "BEAR.Sunday extension PHPTAL adapter",
+    "keywords":[
+        "BEAR.Sunday",
+        "PHPTAL"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Hisateru Tanaka",
+            "email": "tanakahisateru@gmail.com"
+        }
+    ],
+    "require": {
+        "phptal/phptal": "dev-master"
+    },
+    "require-dev": {
+        "php":">=5.4.0",
+        "bear/resource": "0.7.*",
+        "bear/sunday": "0.*"
+    },
+    "minimum-stability": "dev",
+    "autoload":{
+        "psr-0":{
+            "BEAR\\ExtPhptal": "src/"
+        }
+    }
+}
