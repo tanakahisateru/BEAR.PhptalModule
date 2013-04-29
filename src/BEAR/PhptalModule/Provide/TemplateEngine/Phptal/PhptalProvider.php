@@ -9,13 +9,13 @@ namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
 use BEAR\Sunday\Inject\AppDirInject;
 use BEAR\Sunday\Inject\TmpDirInject;
-use Ray\Di\ProviderInterface as Provide;
+use Ray\Di\ProviderInterface;
 
 /**
  * PHPTAL provider
  *
  */
-class PhptalProvider implements Provide
+class PhptalProvider implements ProviderInterface
 {
     use TmpDirInject;
     use AppDirInject;
