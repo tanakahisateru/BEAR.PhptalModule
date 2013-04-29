@@ -3,58 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2be9ce0b391e40694b701bd1bbd2bf2c",
+    "hash": "93c9300e0552d1e73f2cfd1cda1e1b5d",
     "packages": [
-        {
-            "name": "phptal/phptal",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pornel/PHPTAL.git",
-                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/2472ae1a7d21999881c548b443a5cecbe945895d",
-                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.1.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "PHPTAL": "classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPLv2"
-            ],
-            "authors": [
-                {
-                    "name": "Laurent Bédubourg",
-                    "email": "lbedubourg@motion-twin.com",
-                    "homepage": "http://labe.me"
-                },
-                {
-                    "name": "Kornel Lesiński",
-                    "email": "kornel@geekhood.net",
-                    "homepage": "http://pornel.net/"
-                }
-            ],
-            "description": "PHPTAL is a templating engine for PHP5 that implements Zope Page Templates syntax",
-            "homepage": "http://phptal.org/",
-            "keywords": [
-                "phptal",
-                "template engine",
-                "zope"
-            ],
-            "time": "2013-04-17 16:25:11"
-        }
-    ],
-    "packages-dev": [
         {
             "name": "aura/di",
             "version": "1.1.0",
@@ -628,6 +578,54 @@
             "time": "2013-03-25 09:59:05"
         },
         {
+            "name": "phptal/phptal",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pornel/PHPTAL.git",
+                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/2472ae1a7d21999881c548b443a5cecbe945895d",
+                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "PHPTAL": "classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bédubourg",
+                    "email": "lbedubourg@motion-twin.com",
+                    "homepage": "http://labe.me"
+                },
+                {
+                    "name": "Kornel Lesiński",
+                    "email": "kornel@geekhood.net",
+                    "homepage": "http://pornel.net/"
+                }
+            ],
+            "description": "PHPTAL is a templating engine for PHP5 that implements Zope Page Templates syntax",
+            "homepage": "http://phptal.org/",
+            "keywords": [
+                "phptal",
+                "template engine",
+                "zope"
+            ],
+            "time": "2013-04-17 16:25:11"
+        },
+        {
             "name": "ray/aop",
             "version": "1.0.0",
             "source": {
@@ -776,6 +774,9 @@
             "time": "2013-02-11 11:26:43"
         }
     ],
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
@@ -786,7 +787,7 @@
     "platform": [
 
     ],
-    "platform-dev": {
-        "php": ">=5.4.0"
-    }
+    "platform-dev": [
+
+    ]
 }

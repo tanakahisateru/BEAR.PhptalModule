@@ -1,9 +1,10 @@
 {
     "name": "bear/phptal-module",
-    "description": "BEAR.Sunday extension PHPTAL adapter",
+    "description": "BEAR.Sunday PHPTAL adapter module",
     "keywords":[
         "BEAR.Sunday",
-        "PHPTAL"
+        "PHPTAL",
+        "BEAR.Sunday module"
     ],
     "license": "BSD-3-Clause",
     "authors": [
@@ -13,12 +14,10 @@
         }
     ],
     "require": {
-        "phptal/phptal": "dev-master"
+        "phptal/phptal": "dev-master",
+        "bear/sunday": "0.*"
     },
     "require-dev": {
-        "php":">=5.4.0",
-        "bear/resource": "0.7.*",
-        "bear/sunday": "0.*"
     },
     "autoload":{
         "psr-0":{
