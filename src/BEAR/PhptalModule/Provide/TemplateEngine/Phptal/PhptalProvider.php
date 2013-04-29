@@ -27,11 +27,12 @@ class PhptalProvider implements Provide
      */
     public function get()
     {
-        $phptal = new \PHPTAL();
+        $phptal = new \PHPTAL;
         $phptal->setOutputMode(\PHPTAL::HTML5);
         $phptal->setPhpCodeDestination($this->tmpDir . '/cache');
         $phptal->setTemplateRepository($this->appDir . '/Resource/Page');
         $phptal->setTemplateRepository($this->appDir . '/Resource/View');
+
         return $phptal;
     }
 }
