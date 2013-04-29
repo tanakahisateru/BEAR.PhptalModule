@@ -18,8 +18,6 @@ use Ray\Di\Di\Inject;
  */
 class PhptalAdapter implements TemplateEngineAdapterInterface
 {
-    //use AdapterTrait;
-
     /**
      * File extension
      *
