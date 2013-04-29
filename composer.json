@@ -20,7 +20,6 @@
         "bear/resource": "0.7.*",
         "bear/sunday": "0.*"
     },
-    "minimum-stability": "dev",
     "autoload":{
         "psr-0":{
             "BEAR\\PhptalModule": "src/"
