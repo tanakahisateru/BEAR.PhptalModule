@@ -15,8 +15,6 @@ use Ray\Di\Di\Inject;
 /**
  * PHPTAL adapter
  *
- * @package    BEAR.PhptalModule
- * @subpackage Module
  */
 class PhptalAdapter implements TemplateEngineAdapterInterface
 {

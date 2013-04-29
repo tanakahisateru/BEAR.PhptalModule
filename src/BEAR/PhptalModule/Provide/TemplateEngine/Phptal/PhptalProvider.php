@@ -14,8 +14,6 @@ use Ray\Di\ProviderInterface as Provide;
 /**
  * PHPTAL provider
  *
- * @package    BEAR.PhptalModule
- * @subpackage Module
  */
 class PhptalProvider implements Provide
 {

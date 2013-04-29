@@ -13,16 +13,10 @@ use Ray\Di\Scope;
 /**
  * PHPTAL module
  *
- * @package    BEAR.PhptalModule
- * @subpackage Module
  */
 class PhptalModule extends AbstractModule
 {
-    /**
-     * Configure dependency binding
-     *
-     * @return void
-     */
+
     protected function configure()
     {
         $this
