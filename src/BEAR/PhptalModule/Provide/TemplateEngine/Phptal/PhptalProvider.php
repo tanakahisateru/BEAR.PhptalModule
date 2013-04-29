@@ -2,10 +2,10 @@
 /**
  * This file is part of the BEAR.Package package
  *
- * @package BEAR.ExtPhptal
+ * @package BEAR.PhptalModule
  * @license http://opensource.org/licenses/bsd-license.php BSD
  */
-namespace BEAR\ExtPhptal\Provide\TemplateEngine\Phptal;
+namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
 use BEAR\Sunday\Inject\AppDirInject;
 use BEAR\Sunday\Inject\TmpDirInject;
@@ -14,7 +14,7 @@ use Ray\Di\ProviderInterface as Provide;
 /**
  * PHPTAL provider
  *
- * @package    BEAR.ExtPhptal
+ * @package    BEAR.PhptalModule
  * @subpackage Module
  */
 class PhptalProvider implements Provide

@@ -1,9 +1,9 @@
-BEAR.ExtPhptal
+BEAR.PhptalModule
 =============================
 
 Introduction
 ------------
-BEAR.ExtPhptal is [PHPTAL](https://github.com/pornel/PHPTAL) adaptor extension for [BEAR.Sunday](https://github.com/koriym/BEAR.Sunday) framework.
+BEAR.PhptalModule is [PHPTAL](https://github.com/pornel/PHPTAL) adaptor extension for [BEAR.Sunday](https://github.com/koriym/BEAR.Sunday) framework.
 
 Installation
 ------------
@@ -14,7 +14,7 @@ Add this repository and package name to your composer.json.
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/tanakahisateru/BEAR.ExtPhptal.git"
+            "url": "https://github.com/tanakahisateru/BEAR.PhptalModule.git"
         }
     ],
     "require": {
@@ -33,7 +33,7 @@ At first install the module by modifying `YourApp\Module\App\AppModule` as:
 ```php
 namespace YourApp\Module\App;
 
-use BEAR\ExtPhptal\Provide\TemplateEngine\Phptal\PhptalModule;
+use BEAR\PhptalModule\Provide\TemplateEngine\Phptal\PhptalModule;
 
 class AppModule extends AbstractModule
 {

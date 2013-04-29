@@ -2,10 +2,10 @@
 /**
  * This file is part of the BEAR.Package package
  *
- * @package BEAR.ExtPhptal
+ * @package BEAR.PhptalModule
  * @license http://opensource.org/licenses/bsd-license.php BSD
  */
-namespace BEAR\ExtPhptal\Provide\TemplateEngine\Phptal;
+namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
 use BEAR\Sunday\Extension\TemplateEngine\TemplateEngineAdapterInterface;
 use BEAR\Sunday\Exception\TemplateNotFound;
@@ -15,7 +15,7 @@ use Ray\Di\Di\Inject;
 /**
  * PHPTAL adapter
  *
- * @package    BEAR.ExtPhptal
+ * @package    BEAR.PhptalModule
  * @subpackage Module
  */
 class PhptalAdapter implements TemplateEngineAdapterInterface

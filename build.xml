@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="BEAR.ExtPhptal" default="build">
+<project name="BEAR.PhptalModule" default="build">
     <target name="install-pear" description="Installs PEAR">
         <!-- auto-discover channels -->
         <exec executable="pear">

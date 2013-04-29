@@ -9,19 +9,19 @@
          stopOnFailure="false"
          verbose="true">
     <testsuites>
-        <testsuite name="BEAR.ExtPhptal">
+        <testsuite name="BEAR.PhptalModule">
             <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
     <logging>
-        <log type="coverage-html" target="build/coverage" title="BEAR.ExtPhptal" charset="UTF-8" yui="true"
+        <log type="coverage-html" target="build/coverage" title="BEAR.PhptalModule" charset="UTF-8" yui="true"
              highlight="true" lowUpperBound="35" highLowerBound="70"/>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
         <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
     </logging>
     <filter>
         <whitelist>
-            <directory suffix=".php">src/BEAR/ExtPhptal</directory>
+            <directory suffix=".php">src/BEAR/PhptalModule</directory>
         </whitelist>
     </filter>
 </phpunit>

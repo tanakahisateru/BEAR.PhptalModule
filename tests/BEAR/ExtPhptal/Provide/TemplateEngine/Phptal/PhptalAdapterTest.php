@@ -1,8 +1,8 @@
 <?php
 
-namespace BEAR\ExtPhptal\Provide\TemplateEngine;
+namespace BEAR\PhptalModule\Provide\TemplateEngine;
 
-use BEAR\ExtPhptal\Provide\TemplateEngine\Phptal\PhptalAdapter;
+use BEAR\PhptalModule\Provide\TemplateEngine\Phptal\PhptalAdapter;
 
 class PhptalAdapterTest extends \PHPUnit_Framework_TestCase
 {
@@ -26,7 +26,7 @@ class PhptalAdapterTest extends \PHPUnit_Framework_TestCase
 
     public function testNew()
     {
-        $this->assertInstanceOf('\BEAR\ExtPhptal\Provide\TemplateEngine\Phptal\PhptalAdapter', $this->phptalAdapter);
+        $this->assertInstanceOf('\BEAR\PhptalModule\Provide\TemplateEngine\Phptal\PhptalAdapter', $this->phptalAdapter);
     }
 
     public function testAssign()

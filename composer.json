@@ -1,5 +1,5 @@
 {
-    "name": "bear/extphptal",
+    "name": "bear/phptal-module",
     "description": "BEAR.Sunday extension PHPTAL adapter",
     "keywords":[
         "BEAR.Sunday",
@@ -23,7 +23,7 @@
     "minimum-stability": "dev",
     "autoload":{
         "psr-0":{
-            "BEAR\\ExtPhptal": "src/"
+            "BEAR\\PhptalModule": "src/"
         }
     }
 }

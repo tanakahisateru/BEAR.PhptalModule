@@ -2,10 +2,10 @@
 /**
  * This file is part of the BEAR.Package package
  *
- * @package BEAR.ExtPhptal
+ * @package BEAR.PhptalModule
  * @license http://opensource.org/licenses/bsd-license.php BSD
  */
-namespace BEAR\ExtPhptal\Provide\TemplateEngine\Phptal;
+namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
 use Ray\Di\AbstractModule;
 use Ray\Di\Scope;
@@ -13,7 +13,7 @@ use Ray\Di\Scope;
 /**
  * PHPTAL module
  *
- * @package    BEAR.ExtPhptal
+ * @package    BEAR.PhptalModule
  * @subpackage Module
  */
 class PhptalModule extends AbstractModule
