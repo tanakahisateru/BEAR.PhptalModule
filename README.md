@@ -7,18 +7,12 @@ BEAR.PhptalModule is [PHPTAL](https://github.com/pornel/PHPTAL) adaptor extensio
 
 Installation
 ------------
-Add this repository and package name to your composer.json.
+Add the package name to your `composer.json`.
 
 ```json
 {
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/tanakahisateru/BEAR.PhptalModule.git"
-        }
-    ],
     "require": {
-        "bear/extphptal": "*"
+        "bear/phptal-module": "*"
     }
 }
 ```
