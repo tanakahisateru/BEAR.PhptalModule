@@ -1,6 +1,6 @@
 <?php
 
-namespace BEAR\PhptalModule\Provide\TemplateEngine;
+namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
 use BEAR\PhptalModule\Provide\TemplateEngine\Phptal\PhptalAdapter;
 
