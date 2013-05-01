@@ -18,7 +18,8 @@
     ],
     "require": {
         "phptal/phptal": "dev-master",
-        "bear/sunday": "0.*"
+        "bear/resource":"0.7.*",
+        "bear/sunday":"0.*"
     },
     "require-dev": {
     },
