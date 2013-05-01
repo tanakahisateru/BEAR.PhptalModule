@@ -1,5 +1,8 @@
 {
     "name": "bear/phptal-module",
+    "provide": {
+        "bear/template-engine": "0.7.*"
+    },
     "description": "BEAR.Sunday PHPTAL adapter module",
     "keywords":[
         "BEAR.Sunday",
