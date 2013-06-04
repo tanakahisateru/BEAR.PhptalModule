@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1445b2b2038ca80d5ded02e6a1620c59",
+    "hash": "ef3ea95bb5bf012d8a8165281537bb49",
     "packages": [
         {
             "name": "aura/di",
@@ -107,16 +107,16 @@
         },
         {
             "name": "aura/signal",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/auraphp/Aura.Signal",
-                "reference": "1.0.0"
+                "url": "https://github.com/auraphp/Aura.Signal.git",
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/auraphp/Aura.Signal/archive/1.0.0.zip",
-                "reference": "1.0.0",
+                "url": "https://api.github.com/repos/auraphp/Aura.Signal/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
@@ -147,6 +147,10 @@
                 {
                     "name": "Aura.Signal Contributors",
                     "homepage": "https://github.com/auraphp/Aura.Signal/contributors"
+                },
+                {
+                    "name": "Akihito Koriyama",
+                    "email": "akihito.koriyama@gmail.com"
                 }
             ],
             "description": "A SignalSlots/EventHandler implementation for PHP; with it, we can invoke handlers (\"slots\" or \"hooks\") whenever an object sends a signal (\"notification\" or \"event\") to the signal manager.",
@@ -158,7 +162,56 @@
                 "signal",
                 "signal slots"
             ],
-            "time": "2012-11-28 00:00:00"
+            "time": "2013-05-10 00:00:00"
+        },
+        {
+            "name": "bear/ext-template-engine",
+            "version": "0.7.3",
+            "target-dir": "BEAR/Sunday/Extension/TemplateEngine",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BEARSunday/ext-template-engine.git",
+                "reference": "0.7.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BEARSunday/ext-template-engine/zipball/0.7.3",
+                "reference": "0.7.3",
+                "shasum": ""
+            },
+            "require": {
+                "bear/template-engine": "0.7.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "BEAR\\Sunday\\Extension\\TemplateEngine\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Akihito Koriyama",
+                    "email": "akihito.koriyama@gmail.com",
+                    "homepage": "https://github.com/koriym"
+                }
+            ],
+            "description": "BEAR.Sunday template engine extension",
+            "keywords": [
+                "BEAR.Sunday extension",
+                "interface",
+                "template engine"
+            ],
+            "time": "2013-05-01 10:32:41"
         },
         {
             "name": "bear/resource",
@@ -212,16 +265,16 @@
         },
         {
             "name": "bear/sunday",
-            "version": "0.7.2",
+            "version": "0.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koriym/BEAR.Sunday.git",
-                "reference": "0.7.2"
+                "reference": "0.7.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/BEAR.Sunday/zipball/0.7.2",
-                "reference": "0.7.2",
+                "url": "https://api.github.com/repos/koriym/BEAR.Sunday/zipball/0.7.4",
+                "reference": "0.7.4",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +307,7 @@
                 "framework",
                 "rest"
             ],
-            "time": "2013-05-01 01:40:32"
+            "time": "2013-05-28 05:56:24"
         },
         {
             "name": "doctrine/annotations",
@@ -539,12 +592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pornel/PHPTAL.git",
-                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d"
+                "reference": "a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/2472ae1a7d21999881c548b443a5cecbe945895d",
-                "reference": "2472ae1a7d21999881c548b443a5cecbe945895d",
+                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6",
+                "reference": "a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6",
                 "shasum": ""
             },
             "require": {
@@ -579,7 +632,7 @@
                 "template engine",
                 "zope"
             ],
-            "time": "2013-04-17 16:25:11"
+            "time": "2013-06-03 13:07:37"
         },
         {
             "name": "ray/aop",
@@ -678,17 +731,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.2.1",
+            "version": "v2.3.0",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "v2.2.1"
+                "reference": "v2.3.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/v2.2.1",
-                "reference": "v2.2.1",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/v2.3.0-RC1",
+                "reference": "v2.3.0-RC1",
                 "shasum": ""
             },
             "require": {
@@ -698,13 +751,13 @@
                 "symfony/dependency-injection": ">=2.0,<3.0"
             },
             "suggest": {
-                "symfony/dependency-injection": "2.2.*",
-                "symfony/http-kernel": "2.2.*"
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -728,7 +781,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-02-11 11:26:43"
+            "time": "2013-05-13 14:36:40"
         }
     ],
     "packages-dev": [
