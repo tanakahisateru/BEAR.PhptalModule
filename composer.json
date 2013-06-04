@@ -18,8 +18,9 @@
     ],
     "require": {
         "phptal/phptal": "dev-master",
-        "bear/resource":"0.7.*",
-        "bear/sunday":"0.*"
+        "bear/resource": "0.7.*",
+        "bear/ext-template-engine": "*",
+        "bear/sunday": "*"
     },
     "require-dev": {
     },
