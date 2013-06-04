@@ -7,6 +7,7 @@ env:
 
 before_install:
  - wget http://cs.sensiolabs.org/get/php-cs-fixer.phar
+ - wget http://getcomposer.org/composer.phar
  - php composer.phar install --dev
 
 script:
