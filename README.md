@@ -12,7 +12,7 @@ Add the package name to your `composer.json`.
 ```json
 {
     "require": {
-        "bear/phptal-module": "*"
+        "bear/phptal-module": "~0.2"
     }
 }
 ```

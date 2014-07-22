@@ -17,12 +17,12 @@
         }
     ],
     "require": {
-        "phptal/phptal": "dev-master",
-        "bear/resource": "0.7.*",
+        "phptal/phptal": "~1.3",
         "bear/ext-template-engine": "*",
-        "bear/sunday": "*"
+        "bear/sunday": "~0.10"
     },
     "require-dev": {
+        "phpunit/phpunit": "~3.7.0"
     },
     "autoload":{
         "psr-0":{

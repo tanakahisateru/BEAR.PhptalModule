@@ -1,26 +1,66 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "a4193ea785f01a0fc94a7e342b1f270c",
+    "hash": "e63d79e243eada3820c2351470626f22",
     "packages": [
         {
-            "name": "aura/di",
-            "version": "1.1.0",
+            "name": "any/serializer",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/auraphp/Aura.Di.git",
-                "reference": "1.1.0"
+                "url": "https://github.com/koriym/Any.Serializer.git",
+                "reference": "cc9ef96fa131d45d28c87818e3239c916f157a12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/1.1.0",
-                "reference": "1.1.0",
+                "url": "https://api.github.com/repos/koriym/Any.Serializer/zipball/cc9ef96fa131d45d28c87818e3239c916f157a12",
+                "reference": "cc9ef96fa131d45d28c87818e3239c916f157a12",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Any\\Serializer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Akihito Koriyama",
+                    "email": "akihito.koriyama@gmail.com",
+                    "homepage": "http://www.kumasystem.com",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Serialize any value for logging",
+            "keywords": [
+                "make it possible",
+                "serialize"
+            ],
+            "time": "2013-09-20 05:52:42"
+        },
+        {
+            "name": "aura/di",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Di.git",
+                "reference": "e3466bf03c21d6dff4aca8ef57705d26a5939256"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/e3466bf03c21d6dff4aca8ef57705d26a5939256",
+                "reference": "e3466bf03c21d6dff4aca8ef57705d26a5939256",
                 "shasum": ""
             },
             "require": {
-                "aura/installer-default": ">=1.0.0",
+                "aura/installer-default": "1.0.*",
                 "php": ">=5.4.0"
             },
             "type": "aura-package",
@@ -51,10 +91,14 @@
                 {
                     "name": "Kenaniah Cerny",
                     "email": "kenaniah@gmail.com"
+                },
+                {
+                    "name": "Piotr Biedruna",
+                    "email": "p.biedruna@gmail.com"
                 }
             ],
             "description": "The Aura DI package provides a dependency injection container system with native support for constructor- and setter-based injection, lazy-loading of services, and inheritable configuration of setters and constructor params.",
-            "homepage": "http://auraphp.github.com/Aura.Di",
+            "homepage": "http://auraphp.com/Aura.Di",
             "keywords": [
                 "container",
                 "dependency injection",
@@ -62,7 +106,7 @@
                 "di",
                 "di container"
             ],
-            "time": "2013-04-07 00:00:00"
+            "time": "2014-05-31 00:00:00"
         },
         {
             "name": "aura/installer-default",
@@ -107,20 +151,20 @@
         },
         {
             "name": "aura/signal",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/auraphp/Aura.Signal.git",
-                "reference": "1.0.1"
+                "reference": "01280bb119df3933f2669a607636c143d838afea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Signal/zipball/1.0.1",
-                "reference": "1.0.1",
+                "url": "https://api.github.com/repos/auraphp/Aura.Signal/zipball/01280bb119df3933f2669a607636c143d838afea",
+                "reference": "01280bb119df3933f2669a607636c143d838afea",
                 "shasum": ""
             },
             "require": {
-                "aura/installer-default": ">=1.0.0",
+                "aura/installer-default": "1.0.*",
                 "php": ">=5.4.0"
             },
             "type": "aura-package",
@@ -150,11 +194,13 @@
                 },
                 {
                     "name": "Akihito Koriyama",
-                    "email": "akihito.koriyama@gmail.com"
+                    "email": "akihito.koriyama@gmail.com",
+                    "homepage": "http://www.kumasystem.com",
+                    "role": "Lead"
                 }
             ],
             "description": "A SignalSlots/EventHandler implementation for PHP; with it, we can invoke handlers (\"slots\" or \"hooks\") whenever an object sends a signal (\"notification\" or \"event\") to the signal manager.",
-            "homepage": "http://auraphp.github.com/Aura.Signal",
+            "homepage": "http://auraphp.com/Aura.Signal",
             "keywords": [
                 "event",
                 "event handler",
@@ -162,7 +208,7 @@
                 "signal",
                 "signal slots"
             ],
-            "time": "2013-05-10 00:00:00"
+            "time": "2014-05-31 00:00:00"
         },
         {
             "name": "bear/ext-template-engine",
@@ -215,32 +261,40 @@
         },
         {
             "name": "bear/resource",
-            "version": "0.7.7",
+            "version": "0.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koriym/BEAR.Resource.git",
-                "reference": "0.7.7"
+                "reference": "3e7ef283439303f40b18b749430cfc8364e867ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/BEAR.Resource/zipball/0.7.7",
-                "reference": "0.7.7",
+                "url": "https://api.github.com/repos/koriym/BEAR.Resource/zipball/3e7ef283439303f40b18b749430cfc8364e867ff",
+                "reference": "3e7ef283439303f40b18b749430cfc8364e867ff",
                 "shasum": ""
             },
             "require": {
-                "aura/signal": "1.*",
-                "doctrine/cache": "1.*",
-                "guzzle/guzzle": "3.3.*",
+                "any/serializer": "~0.1",
+                "aura/signal": "~1.0",
+                "doctrine/cache": "~1.3",
+                "guzzlehttp/guzzle": "~4.0",
+                "guzzlehttp/guzzle-services": "~0.2",
+                "nocarrier/hal": "~0.9",
                 "php": ">=5.4.0",
-                "ray/di": "1.0.*"
+                "ray/di": "~1.3"
             },
             "require-dev": {
                 "facebook/xhprof": "dev-master"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "BEAR\\Resource": "src/"
+                "psr-4": {
+                    "BEAR\\Resource\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -251,42 +305,51 @@
                 {
                     "name": "Akihito Koriyama",
                     "email": "akihito.koriyama@gmail.com",
-                    "homepage": "https://github.com/koriym"
+                    "homepage": "https://github.com/koriym",
+                    "role": "Lead"
                 }
             ],
-            "description": "RESTful service layer framework",
+            "description": "Hypermedia framework for object as a service",
             "homepage": "https://github.com/koriym/BEAR.Resource",
             "keywords": [
                 "HATEOAS",
+                "Object as a service",
+                "framework",
+                "hypermedia",
+                "protocol",
                 "rest",
-                "service layer"
+                "stateless"
             ],
-            "time": "2013-04-20 12:20:56"
+            "time": "2014-07-07 09:45:19"
         },
         {
             "name": "bear/sunday",
-            "version": "0.7.4",
+            "version": "0.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koriym/BEAR.Sunday.git",
-                "reference": "0.7.4"
+                "reference": "07e8363e166dc3c0e8c128a4b34dc765655bfb7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/BEAR.Sunday/zipball/0.7.4",
-                "reference": "0.7.4",
+                "url": "https://api.github.com/repos/koriym/BEAR.Sunday/zipball/07e8363e166dc3c0e8c128a4b34dc765655bfb7c",
+                "reference": "07e8363e166dc3c0e8c128a4b34dc765655bfb7c",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "bear/resource": "0.7.*"
+                "bear/resource": "~0.13",
+                "php": ">=5.4.0",
+                "psr/log": "~1.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.10.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "BEAR\\Sunday": "src/"
+                "psr-4": {
+                    "BEAR\\Sunday\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -299,28 +362,29 @@
                     "homepage": "https://github.com/koriym/BEAR.Sunday/graphs/contributors"
                 }
             ],
-            "description": "BEAR.Sunday, a resource oriented framework",
+            "description": "Resource oriented framework",
             "homepage": "https://github.com/koriym/BEAR.Sunday",
             "keywords": [
                 "aop",
                 "di",
                 "framework",
+                "hypermedia",
                 "rest"
             ],
-            "time": "2013-05-28 05:56:24"
+            "time": "2014-05-30 11:44:38"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "v1.1.1"
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/v1.1.1",
-                "reference": "v1.1.1",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
                 "shasum": ""
             },
             "require": {
@@ -328,12 +392,13 @@
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/cache": "1.*"
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -349,7 +414,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -367,7 +433,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -378,26 +444,38 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-04-20 08:30:17"
+            "time": "2014-07-06 15:52:21"
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.0",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "v1.0"
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/cache/archive/v1.0.zip",
-                "reference": "v1.0",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/e16d7adf45664a50fa86f515b6d5e7f670130449",
+                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7",
+                "satooshi/php-coveralls": "~0.6"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common\\Cache\\": "lib/"
@@ -411,7 +489,8 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
+                    "homepage": "http://www.jwage.com/",
+                    "role": "Creator"
                 },
                 {
                     "name": "Guilherme Blanco",
@@ -427,9 +506,9 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -439,7 +518,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-01-10 22:43:46"
+            "time": "2013-10-25 19:04:14"
         },
         {
             "name": "doctrine/lexer",
@@ -494,68 +573,30 @@
             "time": "2013-01-12 18:59:04"
         },
         {
-            "name": "guzzle/guzzle",
-            "version": "v3.3.1",
+            "name": "guzzlehttp/command",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "v3.3.1"
+                "url": "https://github.com/guzzle/command.git",
+                "reference": "a06e799bca01ebddf46757e678ede6cf17147f9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/v3.3.1",
-                "reference": "v3.3.1",
+                "url": "https://api.github.com/repos/guzzle/command/zipball/a06e799bca01ebddf46757e678ede6cf17147f9e",
+                "reference": "a06e799bca01ebddf46757e678ede6cf17147f9e",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.2",
-                "symfony/event-dispatcher": ">=2.1"
-            },
-            "replace": {
-                "guzzle/batch": "self.version",
-                "guzzle/cache": "self.version",
-                "guzzle/common": "self.version",
-                "guzzle/http": "self.version",
-                "guzzle/inflection": "self.version",
-                "guzzle/iterator": "self.version",
-                "guzzle/log": "self.version",
-                "guzzle/parser": "self.version",
-                "guzzle/plugin": "self.version",
-                "guzzle/plugin-async": "self.version",
-                "guzzle/plugin-backoff": "self.version",
-                "guzzle/plugin-cache": "self.version",
-                "guzzle/plugin-cookie": "self.version",
-                "guzzle/plugin-curlauth": "self.version",
-                "guzzle/plugin-error-response": "self.version",
-                "guzzle/plugin-history": "self.version",
-                "guzzle/plugin-log": "self.version",
-                "guzzle/plugin-md5": "self.version",
-                "guzzle/plugin-mock": "self.version",
-                "guzzle/plugin-oauth": "self.version",
-                "guzzle/service": "self.version",
-                "guzzle/stream": "self.version"
+                "guzzlehttp/guzzle": "~4.0",
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "doctrine/cache": "*",
-                "monolog/monolog": "1.*",
-                "phpunit/phpunit": "3.7.*",
-                "symfony/class-loader": "*",
-                "zend/zend-cache1": "1.12",
-                "zend/zend-log1": "1.12",
-                "zendframework/zend-cache": "2.0.*",
-                "zendframework/zend-log": "2.0.*"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
             "autoload": {
-                "psr-0": {
-                    "Guzzle\\Tests": "tests/",
-                    "Guzzle": "src/"
+                "psr-4": {
+                    "GuzzleHttp\\Command\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -567,10 +608,61 @@
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides the foundation for building command based web service clients",
+            "time": "2014-04-30 03:48:46"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "012b2aecbda4e38f119c19580898685851015fa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/012b2aecbda4e38f119c19580898685851015fa7",
+                "reference": "012b2aecbda4e38f119c19580898685851015fa7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/streams": "~1.3",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "suggest": {
+                "ext-curl": "Guzzle will use specific adapters if cURL is present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
                 },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
                 {
-                    "name": "Guzzle Community",
-                    "homepage": "https://github.com/guzzle/guzzle/contributors"
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
                 }
             ],
             "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
@@ -584,20 +676,206 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-03-10 23:05:38"
+            "time": "2014-07-16 03:01:02"
         },
         {
-            "name": "phptal/phptal",
-            "version": "dev-master",
+            "name": "guzzlehttp/guzzle-services",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pornel/PHPTAL.git",
-                "reference": "a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6"
+                "url": "https://github.com/guzzle/guzzle-services.git",
+                "reference": "689dfa73b65e2c0a74184a5fb8c5a6ef0b160911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6",
-                "reference": "a99ce90de7f9a0aaf06477f04bd0a5e3a8f9d8c6",
+                "url": "https://api.github.com/repos/guzzle/guzzle-services/zipball/689dfa73b65e2c0a74184a5fb8c5a6ef0b160911",
+                "reference": "689dfa73b65e2c0a74184a5fb8c5a6ef0b160911",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/command": "~0.2",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Command\\Guzzle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides an implementation of the Guzzle Command library that uses Guzzle service descriptions to describe web services, serialize requests, and parse responses into easy to use model structures.",
+            "time": "2014-06-01 20:00:25"
+        },
+        {
+            "name": "guzzlehttp/streams",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/streams.git",
+                "reference": "3b761a328e5ed6ed519e960aded95d7acbe77894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/streams/zipball/3b761a328e5ed6ed519e960aded95d7acbe77894",
+                "reference": "3b761a328e5ed6ed519e960aded95d7acbe77894",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Stream\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Provides a simple abstraction over streams of data (Guzzle 4+)",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "Guzzle",
+                "stream"
+            ],
+            "time": "2014-07-19 18:43:42"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "reference": "1e5e280ae88a27effa2ae4aa2bd088494ed8594f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PHPParser": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2013-08-25 17:11:40"
+        },
+        {
+            "name": "nocarrier/hal",
+            "version": "0.9.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/blongden/hal.git",
+                "reference": "a05d0beaa8ad969315ae236c06a662adc82b7e8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/blongden/hal/zipball/a05d0beaa8ad969315ae236c06a662adc82b7e8d",
+                "reference": "a05d0beaa8ad969315ae236c06a662adc82b7e8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nocarrier": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Longden",
+                    "email": "ben@nocarrier.co.uk",
+                    "homepage": "http://nocarrier.co.uk"
+                }
+            ],
+            "description": "application/hal builder / formatter for PHP 5.3+",
+            "homepage": "https://github.com/blongden/hal",
+            "keywords": [
+                "hal",
+                "hypermedia",
+                "json",
+                "rest",
+                "xml"
+            ],
+            "time": "2014-06-13 10:59:16"
+        },
+        {
+            "name": "phptal/phptal",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pornel/PHPTAL.git",
+                "reference": "090948f2c4756a068530fe648743b1849d1c51cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pornel/PHPTAL/zipball/090948f2c4756a068530fe648743b1849d1c51cd",
+                "reference": "090948f2c4756a068530fe648743b1849d1c51cd",
                 "shasum": ""
             },
             "require": {
@@ -611,7 +889,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPLv2"
+                "LGPL-2.1+"
             ],
             "authors": [
                 {
@@ -632,30 +910,77 @@
                 "template engine",
                 "zope"
             ],
-            "time": "2013-06-03 13:07:37"
+            "time": "2014-03-15 19:29:30"
         },
         {
-            "name": "ray/aop",
+            "name": "psr/log",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/koriym/Ray.Aop.git",
-                "reference": "1.0.0"
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/Ray.Aop/zipball/1.0.0",
-                "reference": "1.0.0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
                 "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "1.*",
-                "php": ">=5.4.0"
             },
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Ray\\Aop": "src/"
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "ray/aop",
+            "version": "1.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koriym/Ray.Aop.git",
+                "reference": "52e99964c28d26ff3d2aa384a82fd061ebdb093f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koriym/Ray.Aop/zipball/52e99964c28d26ff3d2aa384a82fd061ebdb093f",
+                "reference": "52e99964c28d26ff3d2aa384a82fd061ebdb093f",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "~1.1",
+                "nikic/php-parser": "~0.9",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "ray/di": "DI framework supports Ray.Aop"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ray\\Aop\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -668,41 +993,46 @@
                     "homepage": "https://github.com/koriym/Ray.Aop/graphs/contributors"
                 }
             ],
-            "description": "Aspect oriented programing framework",
+            "description": "Aspect oriented framework",
             "homepage": "https://github.com/koriym/Ray.Aop",
             "keywords": [
                 "annotation",
                 "aop",
-                "aspect",
-                "method interception"
+                "aspect"
             ],
-            "time": "2013-03-31 11:58:17"
+            "time": "2014-07-16 10:52:44"
         },
         {
             "name": "ray/di",
-            "version": "1.0.2",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koriym/Ray.Di.git",
-                "reference": "1.0.2"
+                "reference": "830cbae1da7c98658171b1e90e0e19e8d2b334ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koriym/Ray.Di/zipball/1.0.2",
-                "reference": "1.0.2",
+                "url": "https://api.github.com/repos/koriym/Ray.Di/zipball/830cbae1da7c98658171b1e90e0e19e8d2b334ce",
+                "reference": "830cbae1da7c98658171b1e90e0e19e8d2b334ce",
                 "shasum": ""
             },
             "require": {
-                "aura/di": "1.1.*",
-                "doctrine/annotations": "1.*",
-                "doctrine/cache": "1.*",
+                "aura/di": "~1.0",
+                "doctrine/annotations": "~1.1",
+                "doctrine/cache": "~1.3",
+                "nikic/php-parser": "~0.9",
                 "php": ">=5.4.0",
-                "ray/aop": "1.0.*"
+                "ray/aop": "~1.2"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Ray\\Di": "src/"
+                "psr-4": {
+                    "Ray\\Di\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -713,56 +1043,416 @@
                 {
                     "name": "Akihito Koriyama",
                     "email": "akihito.koriyama@gmail.com",
-                    "homepage": "https://github.com/koriym"
+                    "homepage": "https://github.com/koriym",
+                    "role": "Lead"
                 }
             ],
             "description": "Guice style annotation-driven dependency injection framework",
             "homepage": "https://github.com/koriym/Ray.Di",
             "keywords": [
-                "annotation",
+                "annotations",
                 "aop",
-                "aspect oriented programming",
-                "dependency injection",
                 "di",
                 "guice",
                 "jsr"
             ],
-            "time": "2013-04-19 08:42:37"
-        },
+            "time": "2014-07-07 09:13:09"
+        }
+    ],
+    "packages-dev": [
         {
-            "name": "symfony/event-dispatcher",
-            "version": "v2.3.0",
-            "target-dir": "Symfony/Component/EventDispatcher",
+            "name": "phpunit/php-code-coverage",
+            "version": "1.2.17",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "v2.3.0-RC1"
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "6ef2bf3a1c47eca07ea95f0d8a902a6340390b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/v2.3.0-RC1",
-                "reference": "v2.3.0-RC1",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6ef2bf3a1c47eca07ea95f0d8a902a6340390b34",
+                "reference": "6ef2bf3a1c47eca07ea95f0d8a902a6340390b34",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "phpunit/php-file-iterator": ">=1.3.0@stable",
+                "phpunit/php-text-template": ">=1.2.0@stable",
+                "phpunit/php-token-stream": ">=1.1.3@stable"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@dev"
+            },
+            "suggest": {
+                "ext-dom": "*",
+                "ext-xdebug": ">=2.0.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHP/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
+            "homepage": "https://github.com/sebastianbergmann/php-code-coverage",
+            "keywords": [
+                "coverage",
+                "testing",
+                "xunit"
+            ],
+            "time": "2014-03-28 10:53:45"
+        },
+        {
+            "name": "phpunit/php-file-iterator",
+            "version": "1.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+                "reference": "acd690379117b042d1c8af1fafd61bde001bf6bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/acd690379117b042d1c8af1fafd61bde001bf6bb",
+                "reference": "acd690379117b042d1c8af1fafd61bde001bf6bb",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "require-dev": {
-                "symfony/dependency-injection": ">=2.0,<3.0"
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "File/"
+                ]
             },
-            "suggest": {
-                "symfony/dependency-injection": "",
-                "symfony/http-kernel": ""
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "FilterIterator implementation that filters files based on a list of suffixes.",
+            "homepage": "https://github.com/sebastianbergmann/php-file-iterator/",
+            "keywords": [
+                "filesystem",
+                "iterator"
+            ],
+            "time": "2013-10-10 15:34:57"
+        },
+        {
+            "name": "phpunit/php-text-template",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-text-template.git",
+                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Text/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Simple template engine.",
+            "homepage": "https://github.com/sebastianbergmann/php-text-template/",
+            "keywords": [
+                "template"
+            ],
+            "time": "2014-01-30 17:20:04"
+        },
+        {
+            "name": "phpunit/php-timer",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-timer.git",
+                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PHP/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Utility class for timing",
+            "homepage": "https://github.com/sebastianbergmann/php-timer/",
+            "keywords": [
+                "timer"
+            ],
+            "time": "2013-08-02 07:42:54"
+        },
+        {
+            "name": "phpunit/php-token-stream",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "reference": "ad4e1e23ae01b483c16f600ff1bebec184588e32",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "1.2-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHP/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Wrapper around PHP's tokenizer extension.",
+            "homepage": "https://github.com/sebastianbergmann/php-token-stream/",
+            "keywords": [
+                "tokenizer"
+            ],
+            "time": "2014-03-03 05:10:30"
+        },
+        {
+            "name": "phpunit/phpunit",
+            "version": "3.7.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "ae6cefd7cc84586a5ef27e04bae11ee940ec63dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ae6cefd7cc84586a5ef27e04bae11ee940ec63dc",
+                "reference": "ae6cefd7cc84586a5ef27e04bae11ee940ec63dc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-reflection": "*",
+                "ext-spl": "*",
+                "php": ">=5.3.3",
+                "phpunit/php-code-coverage": "~1.2",
+                "phpunit/php-file-iterator": "~1.3",
+                "phpunit/php-text-template": "~1.1",
+                "phpunit/php-timer": "~1.0",
+                "phpunit/phpunit-mock-objects": "~1.2",
+                "symfony/yaml": "~2.0"
+            },
+            "require-dev": {
+                "pear-pear.php.net/pear": "1.9.4"
+            },
+            "suggest": {
+                "phpunit/php-invoker": "~1.1"
+            },
+            "bin": [
+                "composer/bin/phpunit"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.7.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "PHPUnit/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "",
+                "../../symfony/yaml/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "The PHP Unit Testing framework.",
+            "homepage": "http://www.phpunit.de/",
+            "keywords": [
+                "phpunit",
+                "testing",
+                "xunit"
+            ],
+            "time": "2014-04-30 12:24:19"
+        },
+        {
+            "name": "phpunit/phpunit-mock-objects",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "phpunit/php-text-template": ">=1.1.1@stable"
+            },
+            "suggest": {
+                "ext-soap": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "PHPUnit/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sb@sebastian-bergmann.de",
+                    "role": "lead"
+                }
+            ],
+            "description": "Mock Object library for PHPUnit",
+            "homepage": "https://github.com/sebastianbergmann/phpunit-mock-objects/",
+            "keywords": [
+                "mock",
+                "xunit"
+            ],
+            "time": "2013-01-13 10:24:48"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.5.2",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "f868ecdbcc0276b6158dfbf08b9e98ce07f014e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/f868ecdbcc0276b6158dfbf08b9e98ce07f014e1",
+                "reference": "f868ecdbcc0276b6158dfbf08b9e98ce07f014e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
+                    "Symfony\\Component\\Yaml\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -772,32 +1462,24 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony EventDispatcher Component",
+            "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2014-07-09 09:05:48"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "phptal/phptal": 20
-    },
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "prefer-stable": false,
+    "platform": [],
+    "platform-dev": []
 }

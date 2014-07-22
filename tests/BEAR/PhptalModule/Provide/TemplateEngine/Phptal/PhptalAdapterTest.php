@@ -44,7 +44,7 @@ class PhptalAdapterTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \BEAR\Sunday\Exception\TemplateNotFound
+     * @expectedException BEAR\PhptalModule\Provide\TemplateEngine\Exception\TemplateNotFound
      */
     public function testTemplateNotExists()
     {

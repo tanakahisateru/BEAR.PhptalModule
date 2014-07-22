@@ -7,8 +7,8 @@
  */
 namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
+use BEAR\PhptalModule\Provide\TemplateEngine\AdapterTrait;
 use BEAR\Sunday\Extension\TemplateEngine\TemplateEngineAdapterInterface;
-use BEAR\Sunday\Exception\TemplateNotFound;
 use PHPTAL;
 use Ray\Di\Di\Inject;
 
@@ -18,6 +18,8 @@ use Ray\Di\Di\Inject;
  */
 class PhptalAdapter implements TemplateEngineAdapterInterface
 {
+    use AdapterTrait;
+
     /**
      * File extension
      *
@@ -31,13 +33,6 @@ class PhptalAdapter implements TemplateEngineAdapterInterface
      * @var PHPTAL
      */
     private $phptal;
-
-    /**
-     * Template file
-     *
-     * @var string
-     */
-    private $template;
 
     /**
      * @var array
@@ -54,30 +49,6 @@ class PhptalAdapter implements TemplateEngineAdapterInterface
     public function __construct(PHPTAL $phptal)
     {
         $this->phptal = $phptal;
-    }
-
-    /**
-     * Return file exists
-     *
-     * @param string $template
-     *
-     * @throws TemplateNotFound
-     */
-    private function fileExists($template)
-    {
-        if (!file_exists($template)) {
-            throw new TemplateNotFound($template);
-        }
-    }
-
-    /**
-     * Return template full path.
-     *
-     * @return string
-     */
-    public function getTemplateFile()
-    {
-        return $this->template;
     }
 
     /**
