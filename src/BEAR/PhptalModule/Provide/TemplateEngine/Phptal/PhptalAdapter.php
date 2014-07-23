@@ -11,6 +11,8 @@ use BEAR\PhptalModule\Provide\TemplateEngine\AdapterTrait;
 use BEAR\Sunday\Extension\TemplateEngine\TemplateEngineAdapterInterface;
 use PHPTAL;
 use Ray\Di\Di\Inject;
+use Ray\Di\Di\Named;
+use Ray\Di\Di\PostConstruct;
 
 /**
  * PHPTAL adapter

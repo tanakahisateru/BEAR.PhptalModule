@@ -40,9 +40,9 @@ class AppModule extends AbstractModule
 }
 ```
 
-Place TAL syntax mixed XHTML file into `YourApp/Resource/Page` directory.
+Place TAL syntax mixed XHTML file into `YourApp/src/Resource/Page` directory.
 
-### Resource/Page/Index.xhtml
+### src/Resource/Page/Index.xhtml
 
 ```xhtml
 <!DOCTYPE html>
@@ -53,15 +53,16 @@ Place TAL syntax mixed XHTML file into `YourApp/Resource/Page` directory.
 </head>
 <body>
     <div class="container" metal:fill-slot="page">
-        <h1><span tal:content="greeting" tal:omit-tag="">Some greeting message</span> (PHPTAL)</h1>
+        <h1><span tal:content="greeting" tal:omit-tag="">Some greeting message</span></h1>
+        <p>template engine: PHPTAL</p>
     </div>
 </body>
 </html>
 ```
 
-To define shared PHPTAL's macro, place another template file into `YourApp/Resource/View/layout`.
+To define shared PHPTAL's macro, place another template file into `YourApp/var/lib/phptal/template/layout`.
 
-### Resource/View/layout/default.xhtml
+### var/lib/phptal/template/layout/default.xhtml
 
 ```xhtml
 <!DOCTYPE html>
@@ -69,9 +70,8 @@ To define shared PHPTAL's macro, place another template file into `YourApp/Resou
 <head>
     <meta charset="utf-8" />
     <title metal:define-slot="title">title</title>
-    <link href="/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet" />
-    <script src="/assets/js/jquery.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="container" metal:define-slot="page">page</div>

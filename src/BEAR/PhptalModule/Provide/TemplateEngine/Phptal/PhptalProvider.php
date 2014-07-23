@@ -7,18 +7,20 @@
  */
 namespace BEAR\PhptalModule\Provide\TemplateEngine\Phptal;
 
-use BEAR\Sunday\Inject\AppDirInject;
 use BEAR\Sunday\Inject\TmpDirInject;
-use Ray\Di\ProviderInterface;
+use BEAR\Sunday\Inject\LibDirInject;
+use Ray\Di\ProviderInterface as Provide;
+use Ray\Di\Di\Inject;
+use Ray\Di\Di\Named;
 
 /**
  * PHPTAL provider
  *
  */
-class PhptalProvider implements ProviderInterface
+class PhptalProvider implements Provide
 {
     use TmpDirInject;
-    use AppDirInject;
+    use LibDirInject;
 
     /**
      * Return instance
@@ -27,11 +29,21 @@ class PhptalProvider implements ProviderInterface
      */
     public function get()
     {
+        static $phptal;
+
+        if ($phptal) {
+            return $phptal;
+        }
+
+        $tmpDir = $this->tmpDir . '/phptal/cache';
+        if (!file_exists($tmpDir)) {
+            mkdir($tmpDir, 0777, true);
+        }
+
         $phptal = new \PHPTAL;
         $phptal->setOutputMode(\PHPTAL::HTML5);
-        $phptal->setPhpCodeDestination($this->tmpDir . '/cache');
-        $phptal->setTemplateRepository($this->appDir . '/Resource/Page');
-        $phptal->setTemplateRepository($this->appDir . '/Resource/View');
+        $phptal->setPhpCodeDestination($tmpDir);
+        $phptal->setTemplateRepository($this->libDir . '/phptal/template');
 
         return $phptal;
     }
